@@ -18,3 +18,4 @@ def save_entry(category, amount, entry_type):
                              columns=["Date", "Category", "Amount", "Type"])
     df = pd.concat([df, new_entry], ignore_index=True)
     df.to_csv(FILE_NAME, index=False)
+
